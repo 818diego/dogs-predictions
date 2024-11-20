@@ -14,25 +14,28 @@ export default function Identify() {
     const [predictions, setPredictions] = useState<PredictionResult[] | null>(
         null
     );
-    const { isLoading, error, predictImage } = useModel();
+    const { isLoading, error, predictImage, setIsLoading } = useModel();
 
     const handleImageUpload = async (file: File) => {
         try {
             const imageUrl = URL.createObjectURL(file);
             setSelectedImage(imageUrl);
             setPredictions(null);
+            setIsLoading(true);
 
             const img = new Image();
             img.src = imageUrl;
 
             img.onload = async () => {
                 const results = await predictImage(img);
+                setIsLoading(false);
                 if (results) {
                     setPredictions(results);
                 }
             };
         } catch (err) {
             console.error("Error processing image:", err);
+            setIsLoading(false);
         }
     };
 
@@ -169,10 +172,16 @@ export default function Identify() {
 
                         {/* Contenedor para el BreedCard */}
                         <div className="w-full md:w-1/2 lg:w-2/3 flex flex-col space-y-8">
-                            {predictions && (
-                                <div className="w-full">
-                                    <BreedCard breed={predictions[0].breed} />
+                            {isLoading ? (
+                                <div className="flex justify-center items-center">
+                                    <div className="loader"></div>
                                 </div>
+                            ) : (
+                                predictions && (
+                                    <div className="w-full">
+                                        <BreedCard breed={predictions[0].breed} />
+                                    </div>
+                                )
                             )}
                         </div>
                     </div>
