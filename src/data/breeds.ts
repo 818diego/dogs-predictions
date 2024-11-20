@@ -354,6 +354,39 @@ export const breeds: DogBreed[] = [
         imageUrl: "https://example.com/basset.jpg",
     },
     {
+        id: "11",
+        name: "Beagle",
+        characteristics: [
+            "Raza mediana originaria de Inglaterra",
+            "Pelaje corto y fácil de cuidar",
+            "Esperanza de vida de 12 a 15 años",
+            "Amistosos, curiosos y enérgicos",
+            "Excelentes como perros de compañía y de caza",
+        ],
+        care: {
+            grooming: "Cepillado ocasional para remover el pelo suelto.",
+            exercise:
+                "Ejercicio diario vigoroso, ideal para paseos largos o juegos al aire libre.",
+            training:
+                "Requieren entrenamiento constante y paciencia debido a su naturaleza independiente.",
+        },
+        diet: {
+            recommendations: [
+                "Alimento balanceado para razas medianas",
+                "Controlar las porciones para evitar sobrepeso",
+                "Rico en proteínas y carbohidratos para mantener su energía",
+            ],
+            frequency: "2 comidas al día",
+            portions: "Ajustadas según el peso y actividad física",
+        },
+        responsibilities: [
+            "Proporcionar ejercicio regular y variado",
+            "Cuidado básico del pelaje y limpieza de orejas",
+            "Chequeos veterinarios frecuentes para prevenir problemas comunes de salud",
+        ],
+        imageUrl: "https://example.com/beagle.jpg",
+    },
+    {
         id: "12",
         name: "Bloodhound",
         characteristics: [
@@ -1568,6 +1601,227 @@ export const breeds: DogBreed[] = [
             "Revisiones veterinarias periódicas",
         ],
         imageUrl: "https://example.com/tibetan-terrier.jpg",
+    },
+    {
+        id: "50",
+        name: "Silky Terrier",
+        characteristics: [
+            "Raza pequeña originaria de Australia",
+            "Pelaje sedoso y brillante",
+            "Esperanza de vida de 12 a 15 años",
+            "Activos, leales y juguetones",
+            "Buen perro de compañía y para espacios pequeños",
+        ],
+        care: {
+            grooming: "Cepillado regular para mantener el pelaje sedoso.",
+            exercise: "Paseos diarios y juegos moderados.",
+            training:
+                "Socialización temprana y métodos positivos de entrenamiento.",
+        },
+        diet: {
+            recommendations: [
+                "Alimento balanceado para razas pequeñas",
+                "Porciones ajustadas a su nivel de actividad",
+                "Rico en proteínas para mantener su energía",
+            ],
+            frequency: "2 comidas al día",
+            portions: "Pequeñas, ajustadas según peso",
+        },
+        responsibilities: [
+            "Ejercicio regular",
+            "Cuidado del pelaje",
+            "Control veterinario para mantener su salud",
+        ],
+        imageUrl: "https://example.com/silky-terrier.jpg",
+    },
+    {
+        id: "51",
+        name: "Soft-Coated Wheaten Terrier",
+        characteristics: [
+            "Raza mediana con pelaje suave y ondulado",
+            "Originaria de Irlanda",
+            "Esperanza de vida de 12 a 14 años",
+            "Amigables, juguetones y activos",
+            "Adaptables a la vida familiar",
+        ],
+        care: {
+            grooming: "Cepillado semanal para evitar nudos en el pelaje.",
+            exercise: "Ejercicio diario para liberar energía.",
+            training:
+                "Requieren consistencia en el entrenamiento debido a su independencia.",
+        },
+        diet: {
+            recommendations: [
+                "Alimento de calidad para razas medianas",
+                "Rico en proteínas y grasas saludables",
+                "Evitar el sobrepeso",
+            ],
+            frequency: "2 comidas al día",
+            portions: "Ajustadas según actividad física",
+        },
+        responsibilities: [
+            "Cuidado del pelaje",
+            "Ejercicio constante",
+            "Chequeos veterinarios frecuentes",
+        ],
+        imageUrl: "https://example.com/soft-coated-wheaten-terrier.jpg",
+    },
+    {
+        id: "52",
+        name: "West Highland White Terrier",
+        characteristics: [
+            "Raza pequeña originaria de Escocia",
+            "Pelaje blanco y denso",
+            "Esperanza de vida de 12 a 16 años",
+            "Valientes, amigables y alertas",
+            "Buen perro de compañía y cazador de pequeños roedores",
+        ],
+        care: {
+            grooming: "Cepillado frecuente y cortes regulares del pelaje.",
+            exercise: "Paseos diarios y actividades al aire libre.",
+            training: "Entrenamiento positivo para mantener su atención.",
+        },
+        diet: {
+            recommendations: [
+                "Alimento balanceado para razas pequeñas",
+                "Rico en proteínas para mantener la energía",
+                "Controlar las porciones para evitar sobrepeso",
+            ],
+            frequency: "2 comidas al día",
+            portions: "Ajustadas según tamaño y nivel de actividad",
+        },
+        responsibilities: [
+            "Cuidado del pelaje",
+            "Ejercicio regular y supervisado",
+            "Socialización para evitar comportamiento territorial",
+        ],
+        imageUrl: "https://example.com/west-highland-white-terrier.jpg",
+    },
+    {
+        id: "53",
+        name: "Lhasa",
+        characteristics: [
+            "Raza pequeña originaria del Tíbet",
+            "Pelaje largo y abundante",
+            "Esperanza de vida de 12 a 15 años",
+            "Alertas, independientes y leales",
+            "Buenos guardianes debido a su naturaleza protectora",
+        ],
+        care: {
+            grooming: "Cepillado diario y cortes regulares del pelaje.",
+            exercise: "Paseos moderados y juegos en interiores.",
+            training: "Socialización y paciencia durante el entrenamiento.",
+        },
+        diet: {
+            recommendations: [
+                "Alimento balanceado para razas pequeñas",
+                "Rico en nutrientes esenciales para el pelaje",
+                "Porciones ajustadas para evitar sobrepeso",
+            ],
+            frequency: "2 comidas al día",
+            portions: "Pequeñas, según el tamaño y actividad",
+        },
+        responsibilities: [
+            "Cuidado regular del pelaje",
+            "Ejercicio ligero pero constante",
+            "Chequeos veterinarios regulares",
+        ],
+        imageUrl: "https://example.com/lhasa.jpg",
+    },
+    {
+        id: "54",
+        name: "Flat-Coated Retriever",
+        characteristics: [
+            "Raza mediana-grande originaria del Reino Unido",
+            "Pelaje negro o hígado, liso y brillante",
+            "Esperanza de vida de 8 a 10 años",
+            "Amistosos, juguetones y activos",
+            "Excelentes para familias y actividades al aire libre",
+        ],
+        care: {
+            grooming: "Cepillado semanal para mantener el pelaje limpio.",
+            exercise: "Ejercicio diario, idealmente en espacios abiertos.",
+            training: "Entrenamiento positivo con refuerzo constante.",
+        },
+        diet: {
+            recommendations: [
+                "Alimento de calidad para razas medianas-grandes",
+                "Rico en proteínas y grasas saludables",
+                "Porciones ajustadas según su nivel de actividad",
+            ],
+            frequency: "2 comidas al día",
+            portions: "Moderadas, según peso y actividad",
+        },
+        responsibilities: [
+            "Ejercicio regular",
+            "Entrenamiento consistente",
+            "Control veterinario frecuente",
+        ],
+        imageUrl: "https://example.com/flat-coated-retriever.jpg",
+    },
+    {
+        id: "55",
+        name: "Curly-Coated Retriever",
+        characteristics: [
+            "Raza mediana-grande originaria del Reino Unido",
+            "Pelaje rizado y resistente al agua",
+            "Esperanza de vida de 10 a 12 años",
+            "Independientes, inteligentes y enérgicos",
+            "Excelentes para actividades de caza y natación",
+        ],
+        care: {
+            grooming: "Cepillado ocasional para mantener los rizos definidos.",
+            exercise: "Ejercicio vigoroso diario, como correr o nadar.",
+            training: "Entrenamiento temprano para aprovechar su inteligencia.",
+        },
+        diet: {
+            recommendations: [
+                "Alimento balanceado para razas activas",
+                "Rico en proteínas para mantener su energía",
+                "Porciones ajustadas según nivel de actividad",
+            ],
+            frequency: "2 comidas al día",
+            portions: "Ajustadas según peso y ejercicio",
+        },
+        responsibilities: [
+            "Ejercicio constante y desafiante",
+            "Socialización desde cachorro",
+            "Chequeos veterinarios regulares",
+        ],
+        imageUrl: "https://example.com/curly-coated-retriever.jpg",
+    },
+    {
+        id: "56",
+        name: "Golden Retriever",
+        characteristics: [
+            "Raza mediana-grande originaria del Reino Unido",
+            "Pelaje dorado, denso y repelente al agua",
+            "Esperanza de vida de 10 a 12 años",
+            "Amistosos, inteligentes y leales",
+            "Excelentes para familias y como perros de asistencia",
+        ],
+        care: {
+            grooming: "Cepillado frecuente para reducir la muda de pelo.",
+            exercise:
+                "Ejercicio diario como paseos largos o actividades al aire libre.",
+            training:
+                "Fáciles de entrenar, responden bien al refuerzo positivo.",
+        },
+        diet: {
+            recommendations: [
+                "Alimento de calidad para razas medianas-grandes",
+                "Rico en nutrientes para mantener su energía",
+                "Controlar las porciones para evitar el sobrepeso",
+            ],
+            frequency: "2 comidas al día",
+            portions: "Ajustadas según actividad y peso",
+        },
+        responsibilities: [
+            "Ejercicio regular",
+            "Entrenamiento constante y socialización",
+            "Revisiones veterinarias frecuentes",
+        ],
+        imageUrl: "https://example.com/golden-retriever.jpg",
     },
     {
         id: "57",
