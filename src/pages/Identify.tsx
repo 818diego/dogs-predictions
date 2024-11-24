@@ -65,10 +65,63 @@ export default function Identify() {
 
             <div className="space-y-8">
                 {!selectedImage && (
-                    <DropZone
-                        onImageUpload={handleImageUpload}
-                        isLoading={isLoading}
-                    />
+                    <>
+                        {!selectedImage && !isLoading && (
+                            <div className="flex flex-col items-center p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md">
+                                <h2 className="mb-4 text-lg font-semibold text-gray-700 dark:text-gray-200 text-center">
+                                    Recomendaciones para subir una imagen
+                                </h2>
+                                <div className="mt-4 space-y-6 text-sm text-gray-600 dark:text-gray-300">
+                                    <div className="flex items-center gap-4 p-3 rounded-lg transition-colors">
+                                        <div className="flex-shrink-0">
+                                            <div className="w-8 h-8 flex items-center justify-center bg-blue-500 text-white rounded-full">
+                                                <span className="font-bold">
+                                                    1
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <p className="text-justify">
+                                            La cabeza de tu mascota debe ser
+                                            visible.
+                                        </p>
+                                    </div>
+                                    <div className="border-t border-gray-300"></div>
+                                    <div className="flex items-center gap-4 p-3 rounded-lg transition-colors">
+                                        <div className="flex-shrink-0">
+                                            <div className="w-8 h-8 flex items-center justify-center bg-blue-500 text-white rounded-full">
+                                                <span className="font-bold">
+                                                    2
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <p className="text-justify">
+                                            El cuerpo completo debe estar dentro
+                                            del encuadre.
+                                        </p>
+                                    </div>
+                                    <div className="border-t border-gray-300"></div>
+                                    <div className="flex items-center gap-4 p-3 rounded-lg transition-colors">
+                                        <div className="flex-shrink-0">
+                                            <div className="w-8 h-8 flex items-center justify-center bg-blue-500 text-white rounded-full">
+                                                <span className="font-bold">
+                                                    3
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <p className="text-justify">
+                                            La imagen debe ser de buena calidad
+                                            y clara.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        )}
+
+                        <DropZone
+                            onImageUpload={handleImageUpload}
+                            isLoading={isLoading}
+                        />
+                    </>
                 )}
 
                 {error && (
@@ -179,7 +232,9 @@ export default function Identify() {
                             ) : (
                                 predictions && (
                                     <div className="w-full">
-                                        <BreedCard breed={predictions[0].breed} />
+                                        <BreedCard
+                                            breed={predictions[0].breed}
+                                        />
                                     </div>
                                 )
                             )}
